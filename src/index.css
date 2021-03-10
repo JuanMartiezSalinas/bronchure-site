@@ -162,18 +162,19 @@ h4 {
 }
 .video {
   color: black;
-  height: 100vh;
+  height: 55vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  background-color: orange;
+  color: white;
 }
 .screen {
-  margin: 20px 0;
   cursor: pointer;
 }
 .switches {
-  background-color: orange;
+  background-color: rgb(255, 255, 255);
   color: black;
   min-height: 0vh;
   display: flex;
@@ -191,7 +192,7 @@ h4 {
   margin-bottom: 20px;
   /* text-align: center; */
   /* background-color: white; */
-  color: white;
+  color: rgb(0, 0, 0);
   align-content: center;
   padding-left: 7rem;
   padding-right: 7rem;
@@ -202,7 +203,7 @@ h4 {
 }
 
 .container-open {
-  border: 1px solid white;
+  border: 1px solid orange;
   transition: all 1s ease;
   padding-bottom: 10px;
   transition: all 1s ease;
@@ -226,13 +227,15 @@ h4 {
   transition: all 1s linear;
   border-radius: 3px;
 }
-
+.individualSwitchContainer {
+  display: flex;
+}
 .specifications {
   align-self: center;
   align-content: center;
   justify-content: flex-start;
   padding-left: 2rem;
-  border-left: solid 3px rgb(255, 255, 255);
+  border-left: solid 3px orange;
 }
 .specifications p {
   margin-bottom: 0.5rem;
@@ -245,11 +248,11 @@ h4 {
   margin-right: auto;
   margin-left: auto;
   padding: 0.5rem 1rem;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .icono {
-  color: white;
+  color: orange;
   align-self: flex-end;
 }
 
@@ -264,17 +267,24 @@ h4 {
   margin-left: auto;
   margin-right: auto;
   width: 30rem;
-  justify-content: space-around;
-  color: orange;
+  justify-content: center;
+  border-top: solid 3px orange;
   margin-bottom: 2rem;
   margin-top: 1rem;
 }
-.socials li:hover {
-  transform: translate(10px, -2px);
+.socials a {
+  margin: auto;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: orange;
+}
+.socials a:hover {
+  transform: translate(5px, -2px);
+  color: orangered;
   transition: all 0.2s linear;
 }
 .react-player {
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
 }
 
 .contact-details {
@@ -290,7 +300,7 @@ h4 {
 @media screen and (max-width: 900px) {
   .container,
   .individualSwitch {
-    width: 100%;
+    width: 95%;
     grid-template-columns: 1fr 2fr;
     padding: auto 0px;
     padding-left: 3rem;
@@ -318,9 +328,24 @@ h4 {
     display: none;
   }
   .socials {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     margin-bottom: 1.25rem;
+    border-top: solid 3px orange;
+    width: 100%;
+    padding-top: 1rem;
   }
+}
+.select {
+  width: 8rem;
+  padding: 5px 6px;
+  color: white;
+  background-color: orange;
+  border: none;
+  cursor: pointer;
+  height: 40%;
+  align-self: center;
+  outline: none;
+}
+.select:active {
+  transform: translate(1px, 2px);
 }

@@ -6,6 +6,7 @@ import Form from "./Form";
 import Info from "./Info";
 import Video from "./Video";
 import Switches from "./Switches";
+import Social from "./Social";
 function App() {
   return (
     <div>
@@ -13,8 +14,9 @@ function App() {
         <Navbar />
         <Form />
         <Info />
-        <Switches />
         <Video />
+        <Switches />
+        <Social />
         <Switch>
           <Route path="/#info">
             <Info />

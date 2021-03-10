@@ -8,10 +8,8 @@ const Type = ({ data }) => {
   const [over, setOver] = useState(false);
   const { type, description, switches } = data;
   return (
-    <section
-      className={`${shown ? "container container-open" : "container"}`}
-      onClick={() => setShown(!shown)}>
-      <div className="initial-info">
+    <section className={`${shown ? "container container-open" : "container"}`}>
+      <div className="initial-info" onClick={() => setShown(!shown)}>
         {shown ? (
           <div className="icono-container">
             <FiChevronUp className="icono" />
@@ -28,22 +26,25 @@ const Type = ({ data }) => {
       {shown &&
         switches.map((item, index) => {
           return (
-            <div className="individualSwitch">
-              <img src={item.image} className="image" />
-              <div className="specifications">
-                <p>
-                  <strong>Name:</strong> {item.name}
-                </p>
-                <p>
-                  <strong>Manufacturer:</strong> {item.manufacturer}
-                </p>
-                <p>
-                  <strong>Auction Distance:</strong> {item.actuationDistance}
-                </p>
-                <p>
-                  <strong>Auction Force:</strong> {item.actuationForce}
-                </p>
+            <div className="individualSwitchContainer">
+              <div className="individualSwitch">
+                <img src={item.image} className="image" />
+                <div className="specifications">
+                  <p>
+                    <strong>Name:</strong> {item.name}
+                  </p>
+                  <p>
+                    <strong>Manufacturer:</strong> {item.manufacturer}
+                  </p>
+                  <p>
+                    <strong>Auction Distance:</strong> {item.actuationDistance}
+                  </p>
+                  <p>
+                    <strong>Auction Force:</strong> {item.actuationForce}
+                  </p>
+                </div>
               </div>
+              <button className=" select">Select</button>
             </div>
           );
         })}
