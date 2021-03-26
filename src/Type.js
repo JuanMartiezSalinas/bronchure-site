@@ -3,9 +3,8 @@
 import React, { useState } from "react";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 const Type = ({ data }) => {
-  const [isOpen, setIsOpen] = useState(false);
   const [shown, setShown] = useState(false);
-  const [over, setOver] = useState(false);
+
   const { type, description, switches } = data;
   return (
     <section className={`${shown ? "container container-open" : "container"}`}>
@@ -27,24 +26,27 @@ const Type = ({ data }) => {
         switches.map((item, index) => {
           return (
             <div className="individualSwitchContainer">
-              <div className="individualSwitch">
-                <img src={item.image} className="image" />
-                <div className="specifications">
-                  <p>
-                    <strong>Name:</strong> {item.name}
-                  </p>
-                  <p>
-                    <strong>Manufacturer:</strong> {item.manufacturer}
-                  </p>
-                  <p>
-                    <strong>Auction Distance:</strong> {item.actuationDistance}
-                  </p>
-                  <p>
-                    <strong>Auction Force:</strong> {item.actuationForce}
-                  </p>
-                </div>
+              <div className="switchImage">
+                <img
+                  src={process.env.PUBLIC_URL + `${item.image}`}
+                  className="image"
+                  alt={item.name}
+                />
               </div>
-              <button className=" select">Select</button>
+              <div className="specifications">
+                <p>
+                  <strong>Name:</strong> {item.name}
+                </p>
+                <p>
+                  <strong>Manufacturer:</strong> {item.manufacturer}
+                </p>
+                <p>
+                  <strong>Auction Distance:</strong> {item.actuationDistance}
+                </p>
+                <p>
+                  <strong>Auction Force:</strong> {item.actuationForce}
+                </p>
+              </div>
             </div>
           );
         })}

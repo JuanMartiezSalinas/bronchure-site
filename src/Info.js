@@ -28,11 +28,11 @@ const info = [
 const Info = () => {
   return (
     <section id="info" className="info">
-      {info.map((item) => {
+      {info.map((item, index) => {
         return (
-          <article className="info-grid">
-            <div className="a">{item.icon}</div>
-            <article className="b">
+          <article className="info-grid" key={index}>
+            <div className="first-column">{item.icon}</div>
+            <article className="second-column">
               <h1>{item.title}</h1>
               <p>{item.text}</p>
             </article>
