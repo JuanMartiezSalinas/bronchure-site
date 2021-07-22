@@ -1,35 +1,28 @@
 /** @format */
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Navbar from "./Navbar";
-import Form from "./Form";
-import Info from "./Info";
-import Video from "./Video";
-import Switches from "./Switches";
-import Social from "./Social";
+import { Route, Switch } from "react-router-dom";
+import Info from "./Components/Info";
+import Video from "./Components/Video";
+import Switches from "./Components/Switches";
+import Home from "./pages/Home";
+import Switches2 from "./pages/Switches";
 function App() {
   return (
-    <div>
-      <Router>
-        <Navbar />
-        <Form />
+    <Switch>
+      <Route path="/" exact>
+        <Home />
+      </Route>
+      <Route path="/#switches">
         <Info />
-        <Video />
+      </Route>
+      <Route path="/#Keyboards">
         <Switches />
-        <Social />
-        <Switch>
-          <Route path="/#info">
-            <Info />
-          </Route>
-          <Route path="/#switches">
-            <Switches />
-          </Route>
-          <Route path="/#video">
-            <Video />
-          </Route>
-        </Switch>
-      </Router>
-    </div>
+      </Route>
+      <Route path="/#contact">
+        <Video />
+      </Route>
+      <Route path="/switches" children={<Switches2 />} />
+    </Switch>
   );
 }
 
