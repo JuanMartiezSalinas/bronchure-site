@@ -17,8 +17,8 @@ export const switches = [
         facts: [
           "It does not provide any feedback when hitting the actuation point and it just generates noise when bottoming out.",
           "As you get no feedback about the actuation, you probably bottom out every key press. As a consequence, the likelihood of accidental presses might get reduced",
-          "it can be quite tiresome to traverse the entire switch at every key press.",
-          "As a result, the Cherry MX Black switches are mostly used by gamers, especially for RTS and shooter games. Typists usually choose other switch types.",
+          // "it can be quite tiresome to traverse the entire switch at every key press.",
+          // "As a result, the Cherry MX Black switches are mostly used by gamers, especially for RTS and shooter games. Typists usually choose other switch types.",
         ],
       },
       {
@@ -73,7 +73,7 @@ export const switches = [
       },
       {
         name: "SteelSeries QS1",
-        manufacturer: "Kalih",
+        manufacturer: "Kailh",
         switch: "linear",
         actuationDistance: "1.5mm",
         actuationForce: "45g",
@@ -106,7 +106,7 @@ export const switches = [
         facts: [
           "An analog switch with the ability to not only detect if a key is pressed but also measure how far it is pressed ",
           "It enables finer movement control in games, similar to a joystick.",
-          "It can be configured at which point the switch should actuate and it’s even possible to register two actions for different actuation points of a single key stroke",
+          // "It can be configured at which point the switch should actuate and it’s even possible to register two actions for different actuation points of a single key stroke",
         ],
       },
     ],
@@ -126,8 +126,8 @@ export const switches = [
         facts: [
           "Is one of the most popular switch types right now.",
           "The switch represents quite a nice hybrid between gaming and typing",
-          "The switch provides a tactile feedback, but does not generate a sound like the Cherry MX Blue.",
-          "Additional, they are often used in environments, where the Cherry MX Blue switches are too loud, but fast typing is desired.",
+          // "The switch provides a tactile feedback, but does not generate a sound like the Cherry MX Blue.",
+          // "Additional, they are often used in environments, where the Cherry MX Blue switches are too loud, but fast typing is desired.",
         ],
       },
       {
@@ -184,7 +184,7 @@ export const switches = [
           "The Cherry MX Blue is the favored switch type of most typing enthusiasts",
           "The Cherry MX Blue provides tactile feedback and has a loud and clear click sound",
           "Hearing the click sound is really satisfying.",
-          "Keyboards with Cherry MX Blue switches are usually quite loud",
+          // "Keyboards with Cherry MX Blue switches are usually quite loud",
         ],
       },
       {
@@ -225,5 +225,50 @@ export const switches = [
         ],
       },
     ],
+  },
+];
+
+export const preBuildKB = [
+  {
+    name: "VC-500",
+    price: 35,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet dictum sit amet justo donec enim. Blandit volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque. In ornare quam viverra orci sagittis eu volutpat odio facilisis.",
+    img: "https://images.unsplash.com/photo-1615869442320-fd02a129c77c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1492&q=80",
+  },
+  {
+    name: "NB Steel",
+    price: 40,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet dictum sit amet justo donec enim. Blandit volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque. In ornare quam viverra orci sagittis eu volutpat odio facilisis.",
+    img: "https://images.unsplash.com/photo-1623710153070-767cb3619e37?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80",
+  },
+  {
+    name: "KMV Standard",
+    price: 30,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet dictum sit amet justo donec enim. Blandit volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque. In ornare quam viverra orci sagittis eu volutpat odio facilisis.",
+    img: "https://m.media-amazon.com/images/I/71nRfZNacyL._AC_SL1500_.jpg",
+  },
+  {
+    name: "VC-500",
+    price: 35,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet dictum sit amet justo donec enim. Blandit volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque. In ornare quam viverra orci sagittis eu volutpat odio facilisis.",
+    img: "https://images.unsplash.com/photo-1615869442320-fd02a129c77c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1492&q=80",
+  },
+  {
+    name: "VC-500",
+    price: 35,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet dictum sit amet justo donec enim. Blandit volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque. In ornare quam viverra orci sagittis eu volutpat odio facilisis.",
+    img: "https://images.unsplash.com/photo-1615869442320-fd02a129c77c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1492&q=80",
+  },
+  {
+    name: "VC-500",
+    price: 35,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet dictum sit amet justo donec enim. Blandit volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque. In ornare quam viverra orci sagittis eu volutpat odio facilisis.",
+    img: "https://images.unsplash.com/photo-1615869442320-fd02a129c77c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1492&q=80",
   },
 ];
